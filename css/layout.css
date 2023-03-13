@@ -257,7 +257,7 @@ ul#nav li.current a {
   background-color: white;
   overflow: hidden;
   text-align: start;
-  min-height: 100vh;
+  min-height: 60vh;
 }
 
 #about p {
