@@ -1057,6 +1057,7 @@ properly.
     margin: 0 auto;
     padding: 0;
   }
+
   .column,
   .columns {
     width: auto !important;
@@ -1120,11 +1121,31 @@ properly.
   .row {
     width: auto;
   }
+
+  .row-flex {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    width: 96%;
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+
+  .subscribe-row {
+    padding-top: 50px;
+    padding-buttom: 50px;
+    padding-right: auto;
+    padding-left: auto;
+  }
 }
 
 /* larger screens
 --------------------------------------------------------------- */
 @media screen and (min-width: 1200px) {
+  .subscribe-row {
+    padding: 50px;
+  }
+
   .wide .row {
     max-width: 1180px;
   }
