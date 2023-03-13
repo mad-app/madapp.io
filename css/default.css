@@ -244,6 +244,7 @@ h6 {
   color: #313131;
   font-family: "opensans-bold", sans-serif;
   font-weight: normal;
+  word-break: keep-all;
 }
 h1 a,
 h2 a,
@@ -287,6 +288,7 @@ h6 {
 
 p {
   margin: 0 0 30px 0;
+  word-break: keep-all;
 }
 p img {
   margin: 0;

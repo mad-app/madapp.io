@@ -478,11 +478,13 @@ ul#nav li.current a {
   display: flex;
   justify-content: space-between;
   min-height: 250px;
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 700;
   line-height: 41px;
   align-items: center;
   white-space: pre-wrap;
+  word-break: keep-all;
+  gap: 20px;
 }
 
 .fac-content {
