@@ -32,21 +32,28 @@ body {
 
 header {
   position: relative;
-  height: 800px;
-  min-height: 500px;
+  height: 50px;
+  min-height: 50px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
-
   text-align: center;
   overflow: hidden;
+  height: 100vh;
 }
 
+header img {
+  width: 150px;
+  height: 50px;
+  object-fit: cover;
+}
+header .imageBox {
+  float: left;
+}
 /* vertically center banner section */
 header:before {
   content: "";
   display: inline-block;
   vertical-align: middle;
-  height: 100%;
 }
 
 header .banner {
@@ -61,6 +68,7 @@ header .banner {
 header .banner-text {
   width: 100%;
 }
+
 header .banner-text h1 {
   font: 90px/1.1em "opensans-bold", sans-serif;
   color: #fff;
@@ -154,7 +162,7 @@ header .scrolldown a:hover {
   top: 0;
 }
 .opaque {
-  background-color: #333;
+  background-color: #ffffff;
 }
 
 /* hide toggle button */
@@ -164,11 +172,12 @@ header .scrolldown a:hover {
 
 ul#nav {
   min-height: 48px;
-  width: auto;
+  width: 100%;
 
   /* center align the menu */
   text-align: center;
 }
+
 ul#nav li {
   position: relative;
   list-style: none;
@@ -200,7 +209,45 @@ ul#nav li a:active {
 ul#nav li.current a {
   color: #007bff;
 }
+/*----------------------------------------------*/
+/*	Home section
+/*----------------------------------------------*/
 
+#home {
+  padding-top: 96px;
+  padding-bottom: 66px;
+  /* background-color: white; */
+  overflow: hidden;
+  text-align: start;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#home div.columns {
+  width: 90%;
+}
+#home .SignatureBackground {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+#home .SignatureBackground img {
+  height: 100%;
+}
+
+#home h1 {
+  margin-bottom: 20px;
+}
+#home h2 {
+  margin-bottom: 40px;
+}
+.button {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 197, 100);
+  width: 150px;
+  border-radius: 5px;
+}
 /* ------------------------------------------------------------------ */
 /* c. About Section
 /* ------------------------------------------------------------------ */
@@ -211,6 +258,13 @@ ul#nav li.current a {
   background-color: white;
   overflow: hidden;
   text-align: start;
+  min-height: 100vh;
+}
+
+#about p {
+  margin-bottom: 6px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 #about a,
@@ -221,21 +275,34 @@ ul#nav li.current a {
 #about a:focus {
   color: #0762f9;
 }
-
+#about img {
+  width: 900px;
+  height: 500px;
+  object-fit: cover;
+}
+#about .imageBox {
+  text-align: center;
+}
+#about .company {
+  margin: 60px auto;
+}
+#about h1 {
+  margin-bottom: 20px;
+}
 #about h2 {
-  font: 22px/30px "opensans-bold", sans-serif;
+  font: 25px/30px "opensans-bold", sans-serif;
   color: #333;
   margin-bottom: 12px;
 }
-
-#about .sub-title {
-  font: 16px/24px "opensans-bold", sans-serif;
-  font-weight: 700;
-}
-
-#about p {
-  line-height: 15px;
+#about .company-h2 {
+  font: 25px/30px "opensans-bold", sans-serif;
   color: #333;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+#about .sub-title {
+  font: 20px/28px "opensans-bold", sans-serif;
+  font-weight: 700;
 }
 
 #about b {
@@ -391,6 +458,48 @@ ul#nav li.current a {
   line-height: 42px;
   border-radius: 0px;
 }
+
+/*----------------------------------------------*/
+/*	Factory section
+/*----------------------------------------------*/
+
+#byfactory {
+  padding-top: 96px;
+  padding-bottom: 66px;
+  background-color: white;
+  overflow: hidden;
+  text-align: start;
+}
+
+#byfactory p {
+  margin: 10px 0;
+}
+
+.fac-header {
+  display: flex;
+  justify-content: space-between;
+  min-height: 250px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 41px;
+  align-items: center;
+  white-space: pre-wrap;
+}
+
+.fac-content {
+  margin: 80px 14px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.fac-content .content-desc {
+  flex: 1;
+}
+
+.fac-content .content-image {
+  flex: 1;
+}
+
 /*
 .git {
   	-moz-animation: git 2s ease;

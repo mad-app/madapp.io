@@ -45,9 +45,9 @@ jQuery(document).ready(function ($) {
       offset: "35%",
     });
 
-    $("header").css({ height: $(window).height() });
+    // $("header").css({ height: $(window).height() });
     $(window).on("resize", function () {
-      $("header").css({ height: $(window).height() });
+      // $("header").css({ height: $(window).height() });
       $("body").css({ width: $(window).width() });
     });
 

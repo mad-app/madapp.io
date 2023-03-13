@@ -134,7 +134,7 @@
   #nav-wrap > a:before,
   #nav-wrap > a:after {
     position: absolute;
-    border: 2px solid #fff;
+    border: 2px solid #00aa56;
     top: 35%;
     left: 25%;
     right: 25%;
@@ -224,6 +224,25 @@
     display: none;
   }
 
+  section {
+    padding: 0 30px;
+  }
+
+  #home .SignatureBackground {
+    margin: 30px;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 60px;
+    text-align: center;
+  }
+
+  #home .SignatureBackground h1 {
+    display: none;
+  }
+
+  #home .SignatureBackground h2 {
+    font-size: 24px;
+  }
   /* About Section
    -------------------------------------------------------------------- */
   #about .profile-pic {
@@ -236,6 +255,19 @@
   }
   #about .main-col {
     padding-right: 30px;
+  }
+
+  /* byFactory styles
+   -------------------------------------------------------------------- */
+  .fac-header {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    font-size: 30px;
+  }
+
+  .fac-content {
+    flex-direction: column;
   }
 
   /* Resume Section
@@ -408,6 +440,10 @@
   #nav-wrap ul#nav {
     width: auto;
     float: none;
+  }
+
+  #nav .imageBox {
+    display: none;
   }
 
   /* header styles
