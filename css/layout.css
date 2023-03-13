@@ -38,7 +38,7 @@ header {
   background-color: rgba(255, 255, 255, 0.98);
   text-align: center;
   overflow: hidden;
-  height: 100vh;
+  height: 50vh;
 }
 
 header img {
@@ -493,6 +493,10 @@ ul#nav li.current a {
 }
 .fac-content .content-desc {
   flex: 1;
+}
+
+.fac-content .content-desc p {
+  white-space: pre-wrap;
 }
 
 .fac-content .content-image {
