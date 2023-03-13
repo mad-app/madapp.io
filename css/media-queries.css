@@ -193,9 +193,6 @@
 
   /* Header Styles
    -------------------------------------------------------------------- */
-  header {
-    min-height: 550px;
-  }
   header .banner {
     padding-bottom: 12px;
     padding-top: 6px;
@@ -266,12 +263,7 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 20px;
-    font-size: 24px;
-  }
-
-  .fac-header img {
-    width: 70%;
-    min-width: 240px;
+    font-size: 30px;
   }
 
   .fac-content {

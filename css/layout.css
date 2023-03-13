@@ -32,13 +32,13 @@ body {
 
 header {
   position: relative;
-  height: 50px;
   min-height: 50px;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.98);
   text-align: center;
   overflow: hidden;
   height: 50vh;
+  background-color: darkgrey;
+  text-align: center;
 }
 
 header img {
@@ -251,13 +251,49 @@ ul#nav li.current a {
 /* c. About Section
 /* ------------------------------------------------------------------ */
 
+.solution {
+  margin-buttom: 1em;
+  text-align: center;
+}
+
+.centering {
+  text-align:center; 
+}
+
+.rowTop {
+  margin-top: 10px !important;
+}
+
+.partner-logo-row {
+  display: flex;
+  margin-top: 30px;
+}
+
+.partner-logo-row-container {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  justify-content: space-between;
+  text-align: center;
+  row-gap: 30px;
+}
+
+.partner-img {
+  width: 200px
+}
+
 #about {
-  padding-top: 96px;
-  padding-bottom: 66px;
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  /* padding-top: 96px; */
+  /* padding-bottom: 66px; */
   background-color: white;
   overflow: hidden;
   text-align: start;
-  min-height: 60vh;
+  /* min-height: 100vh; */
 }
 
 #about p {
@@ -275,8 +311,8 @@ ul#nav li.current a {
   color: #0762f9;
 }
 #about img {
-  width: 900px;
-  height: 500px;
+  width: 300px;
+  /* height: 500px; */
   object-fit: cover;
 }
 #about .imageBox {
@@ -286,7 +322,7 @@ ul#nav li.current a {
   margin: 60px auto;
 }
 #about h1 {
-  margin-bottom: 20px;
+  margin-bottom: 3em;
 }
 #about h2 {
   font: 25px/30px "opensans-bold", sans-serif;
@@ -478,13 +514,11 @@ ul#nav li.current a {
   display: flex;
   justify-content: space-between;
   min-height: 250px;
-  font-size: 34px;
+  font-size: 36px;
   font-weight: 700;
   line-height: 41px;
   align-items: center;
   white-space: pre-wrap;
-  word-break: keep-all;
-  gap: 20px;
 }
 
 .fac-content {
